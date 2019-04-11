@@ -45,6 +45,109 @@
     font-style: normal;
 
 }
+* {box-sizing: border-box;}
+
 body{
     background-color: #141414;
+    font-family: 'pier-sansregular';
+    color: white;
+    font-size: 14px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    padding: 0 60px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header nav a.header-logo .logo {
+    display: block;
+    width: 92px;
+    height: 55px;
+    background: url('../images/netflix-logo.svg')
+    no-repeat center center;
+    background-size: contain;
+    will-change: transform;
+    transition: .25s ease-in-out;
+}
+header nav a.header-logo .logo:hover{
+    transform: scale(1.2);
+}
+main {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.profiles-selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    margin-top: 65px;
+}
+.profiles-selection-container h1{
+    font-family: 'pier-sansregular';
+    font-size: 52px;
+    text-align: center;
+}
+.profiles-selection-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;  
+    margin: 0 20px;
+     
+}
+.profile-container .profile-pic {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: url('../images/dog.png') no-repeat center center;
+    background-size: contain;
+    border: 5px solid #1f1f1f;
+    transition: .25s ease-in-out;
+}
+.profile-container:nth-of-type(2) .profile-pic {
+    background: url('../images/face-red.png') no-repeat center center;
+    background-size: contain;
+}
+.profile-container:nth-of-type(3) .profile-pic {
+    background: url('../images/face-green.png') no-repeat center center;
+    background-size: contain;
+}
+.profile-container:nth-of-type(4) .profile-pic {
+    background: url('../images/face-yellow.png') no-repeat center center;
+    background-size: contain;
+}
+.profile-container:nth-of-type(5) .profile-pic {
+    background: url('../images/kids-section.png') no-repeat center center;
+    background-size: contain;
+}
+
+.profile-container:hover .profile-pic {
+    border-color: #fff;
+}
+.profile-container h3{
+    font-family: 'pier-sansregular'; font-size: 16px;
+    color: #808080; transition: .25s ease-in-out;
+}
+.profile-container:hover h3{
+    color:#fff;
 }
