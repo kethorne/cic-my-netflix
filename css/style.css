@@ -95,7 +95,7 @@ main {
     margin-top: 65px;
 }
 .profiles-selection-container h1{
-    font-family: 'pier-sansregular';
+    font-family: 'pier_sansregular';
     font-size: 52px;
     text-align: center;
     margin-bottom: 40px;
@@ -117,7 +117,7 @@ main {
     align-content: space-between;
      
 }
-.profile-container .profile-pic {
+.profile-container .profile-pic, a.profile-container .profile-pic{
     display: block;
     width: 150px;
     height: 150px;
@@ -147,7 +147,7 @@ main {
     border-color: #fff;
 }
 .profile-container h3{
-    font-family: 'pier-sansregular'; font-size: 16px;
+    font-family: 'pier_sansregular'; font-size: 16px;
     color: #808080; transition: .25s ease-in-out;
 }
 .profile-container:hover h3{
@@ -158,14 +158,102 @@ main {
     align-self: flex-end;
     padding: 5px 20px;
     background: #141414;
-    font-family: 'pier-sansregular';
+    font-family: 'pier_sansregular';
     font-size: 18px;
     color: grey;
-    margin-top: 60px;
+    margin-top: 65px;
     width: 100%;
     min-height: 40px;
     border: 1px solid #808080;
+    letter-spacing: 3.5px;
 }
 .manage-profiles:hover {
     color: #fff;
+    border-color: #fff;
+}
+.list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'pier_sansregular';
+    font-size: 18px;
+    color: #fff; 
+    margin-left: 40px;  
+}
+.header-logo {
+    color: #fff;
+}
+.home {
+    padding: 10px;
+}
+.tv-shows {
+    padding: 10px;
+}
+.movies {
+    padding: 10px;
+}
+.recently-added {
+    padding: 10px;
+}
+.my-list {
+    padding: 10px;
+}
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 0 0 auto;
+    padding: 20px;
+    align-items: center;
+    font-family: 'pier_sansregular';
+    font-size: 18px;
+}
+/* .search-icon {
+    padding: 10px;
+    margin-top: 30px;
+}
+.notifications-icon {
+    padding: 10px;
+    margin-top: 30px;
+} */
+.kids {
+    padding: 10px;
+}
+.dvd {
+    padding: 10px;
+}
+.icon-container .icons:nth-of-type(2) .kids {
+   font-family: 'pier_sansregular';
+}
+.icon-container .icons:nth-of-type(3) .dvd {
+    font-family: 'pier_sansregular';
+ }
+ .icon-container .icons:nth-of-type(4) .notifications-icon {
+    font-family: 'pier_sansregular';
+ }
+.section .featured-section {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+.section .featured-section:after{
+    content: '';
+    width: 100%;
+    height: 125px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(to top, #141414, transparent);
+}
+.section .featured-section .video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
