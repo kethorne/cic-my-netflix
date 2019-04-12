@@ -65,6 +65,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 header nav a.header-logo .logo {
     display: block;
@@ -180,6 +181,11 @@ main {
     color: #fff; 
     margin-left: 40px;  
 }
+.list-container a {
+    color: #fff;
+    padding:0 8px;
+    text-decoration: none;
+}
 .header-logo {
     color: #fff;
 }
@@ -232,14 +238,14 @@ main {
  .icon-container .icons:nth-of-type(4) .notifications-icon {
     font-family: 'pier_sansregular';
  }
-.section .featured-section {
+section.featured-section {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
     position: relative;
 }
-.section .featured-section:after{
+section.featured-section:after{
     content: '';
     width: 100%;
     height: 125px;
@@ -249,7 +255,7 @@ main {
     z-index: 10;
     background: linear-gradient(to top, #141414, transparent);
 }
-.section .featured-section .video {
+section.featured-section video {
     width: 100%;
     height: 100%;
     position: absolute;
