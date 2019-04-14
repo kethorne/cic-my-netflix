@@ -335,7 +335,7 @@ section.featured-section video {
 .feature-action-buttons button#play-pause-button.play-video .play-controls{
     display: flex;
 }
-.feature-action-buttons:hover {
+.feature-action-buttons button:hover {
     transform: scale(1.05);
     transform-origin: center;
     background: #fff;
@@ -388,6 +388,15 @@ section.featured-section video {
     width: 100%;
     height: auto;
 }
+.show-selection-row-releases {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: -105px 0 45px 0;
+}
 .show-container {
     display: flex;
     flex-direction: column;
@@ -396,6 +405,7 @@ section.featured-section video {
     width: 100%;
     height: auto;
     padding: 2px;
+    transition: .25s ease-in-out;
 }
 .pic {
     width: 220px;
