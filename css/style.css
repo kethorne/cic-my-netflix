@@ -267,13 +267,14 @@ section.featured-section video {
     display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: flex-start;
-   width: 100%;
+   align-items: space-between;
+   width: 80%;
    height: 100%;
    position: absolute;
    top: 0;
    left: 0;
    z-index: 999;
+   margin-left: 40px;
 }
 /* .play-pause-button {
     display: flex;
@@ -287,7 +288,14 @@ section.featured-section video {
     justify-content: flex-end;
     align-items: center;
 } */
-#feature-content-container .feature-action-buttons button#play-pause-button {
+.feature-action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feature-action-buttons button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -295,7 +303,7 @@ section.featured-section video {
     padding: 10px 35px;
     background: rgba(0, 0, 0, .35);
     box-shadow: 0;
-    color: #e6e6e6;
+    /* color: #e6e6e6; */
     font-family: 'pier_sansbold';
     font-size: 16px;
     margin-right: 10px;
@@ -306,28 +314,111 @@ section.featured-section video {
     will-change: transform;
     transition: .2s ease-in-out;
 }
-#feature-content-container .feature-action-buttons button#play-pause-button span{
+.feature-action-buttons button#play-pause-button span{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#feature-content-container .feature-action-buttons button#play-pause-button .play-controls{
+.feature-action-buttons button#play-pause-button .play-controls{
     display: none;
 }
-#feature-content-container .feature-action-buttons button#play-pause-button.pause-video .pause-controls{
+.feature-action-buttons button#play-pause-button.pause-video .pause-controls{
     display: flex;
 }
-#feature-content-container .feature-action-buttons button#play-pause-button.pause-video .play-controls{
+.feature-action-buttons button#play-pause-button.pause-video .play-controls{
     display: none;
 }
-#feature-content-container .feature-action-buttons button#play-pause-button.play-video .pause-controls{
+.feature-action-buttons button#play-pause-button.play-video .pause-controls{
     display: none;
 }
-#feature-content-container .feature-action-buttons button#play-pause-button.play-video .play-controls{
+.feature-action-buttons button#play-pause-button.play-video .play-controls{
     display: flex;
 }
-.p {
+.feature-action-buttons:hover {
+    transform: scale(1.05);
+    transform-origin: center;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 15px 25px 0 rgba(10 10 10 .20);
+    cursor: pointer;
+}
+.feature-action-buttons button i{
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+.feature-description{
+    font-size: 21px;
+    line-height: 1.4;
+    text-shadow: 5px 5px 12px #000;
+    width: 35%;
+}
+.homepage main {
     width: 100%;
-    font-size: 46px;
-    color: red;
+    max-width: 100%;
+    padding-bottom: 100px;
+}
+.show-selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    margin: 0 0 45px 0;
+    padding: 20px;
+}
+.show-selection-container h2 {
+    display: flex;
+    justify-content: start;
+    font-family: 'pier_sansmedium';
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.show-selection-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+.pic {
+    width: 220px;
+    height: 120px;
+}
+.o-pic {
+    width: 220px;
+    height: 330px;
+}
+.show-container:first-of-type:hover {
+    transform: scale(1.75);
+    transform-origin: center left;
+    box-shadow: 0 15px 135px 0 rgba(10 10 10 .85); 
+    cursor: pointer;
+    z-index: 998;
+}
+.show-container:last-of-type:hover {
+    transform: scale(1.75);
+    transform-origin: center right;
+    box-shadow: 0 135px 15px 0 rgba(10 10 10 .85); 
+    cursor: pointer;
+    z-index: 998;
+}
+.show-container:hover {
+    transform: scale(1.75);
+    transform-origin: center;
+    box-shadow: 0 15px 35px 0 rgba(10 10 10 .85); 
+    cursor: pointer;
+    z-index: 998;
 }
