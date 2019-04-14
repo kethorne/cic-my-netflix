@@ -271,10 +271,11 @@ section.featured-section video {
    width: 80%;
    height: 100%;
    position: absolute;
-   top: 0;
+   top: 0px;
    left: 0;
    z-index: 999;
    margin-left: 40px;
+   
 }
 /* .play-pause-button {
     display: flex;
@@ -356,7 +357,9 @@ section.featured-section video {
 .homepage main {
     width: 100%;
     max-width: 100%;
-    padding-bottom: 100px;
+    /* padding-bottom: 80px; */
+    margin: 0 0 100px 0;
+    height: auto;
 }
 .show-selection-container {
     display: flex;
@@ -366,7 +369,8 @@ section.featured-section video {
     width: 100%;
     height: auto;
     margin: 0 0 45px 0;
-    padding: 20px;
+    padding: 20px 0 0 20px;
+    
 }
 .show-selection-container h2 {
     display: flex;
